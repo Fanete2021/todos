@@ -1,22 +1,21 @@
 import React from 'react';
+import { Todos } from '../components/widgets';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div
+        className="app__title"
+      >
+        todos
+      </div>
+
+      <div
+        className="app__content"
+      >
+        <Todos />
+      </div>
     </div>
   );
 }
